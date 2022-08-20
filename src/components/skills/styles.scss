@@ -6,7 +6,7 @@
     width: 4rem;
     height: 4rem;
     //display: block;
-    margin: auto;
+    //margin: auto;
 }
 
 .logoImg {
@@ -14,5 +14,8 @@
 }
 
 .skillBody {
-    padding-left: 3rem;
+    padding: 8px 0px 8px 0px;
+    margin-left: 3rem;
+    margin-top: 50px;
+    box-shadow: 5px 10px 18px rgba(140, 140, 140, 0.77);
 }

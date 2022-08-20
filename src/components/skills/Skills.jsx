@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
-import style from './styles.module.scss';
+import './styles.scss';
 
 import cSharp from '../../images/logoCSharp.svg';
 import javascriptImg from '../../images/javascript.png';
@@ -21,7 +21,8 @@ export default class Skills extends Component {
             autoplay: true,
             autoplaySpeed: 1000,
             speed: 2000,
-            cssEase: "linear"
+            cssEase: "linear",
+            arrows: false
         };
 
         const imagens = [cSharp, javascriptImg, sqlImg, jqueryImg, reactImg];
@@ -31,8 +32,8 @@ export default class Skills extends Component {
                 <Slider {...settings}>
                     {
                         imagens.map(imagem => (
-                            <div className={style.logoImg} key={imagem}>
-                                <img alt='' src={imagem} className={style.imageSkill} />
+                            <div className='logoImg' key={imagem}>
+                                <img alt='' src={imagem} className='imageSkill' />
                             </div>
                         ))
                     }
